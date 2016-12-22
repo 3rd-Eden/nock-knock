@@ -10,6 +10,12 @@ describe('knock', function () {
     assume(knock('/what')).is.a('function');
   });
 
+  it('just works (tm) for basic urls', function () {
+    const test = knock('/foo');
+
+    assume(test('/foo')).is.true();
+  });
+
   describe('validators', function () {
     it('call the validators for the params', function (next) {
       next = assume.wait(2, 2, next);

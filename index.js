@@ -18,7 +18,7 @@ export default function knock(path, validators = {}) {
    * @private
    */
   return function parser(url) {
-    const params = route.exec(url);
+    const params = route.exec(url) || {};
 
     return Object.keys(params).every(function every(key) {
       if (!(key in validators)) return true;
