@@ -1,5 +1,6 @@
+import { describe, it } from 'mocha';
 import assume from 'assume';
-import knock from './';
+import knock from './index';
 
 describe('knock', function () {
   it('is exported as function', function () {
