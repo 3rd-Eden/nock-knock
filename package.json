@@ -1,17 +1,14 @@
 {
   "name": "nock-knock",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "description": "Advanced router handling for nock",
-  "main": "./lib",
-  "browser": "./index",
+  "main": "./index",
   "scripts": {
-    "test": "mocha --require babel-register test.js",
-    "build": "babel ./index.js -d ./lib",
-    "prepublish": "npm run build"
+    "test": "mocha test.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/destinythegame/nock-knock.git"
+    "url": "git+https://github.com/3rd-Eden/nock-knock.git"
   },
   "keywords": [
     "nock",
@@ -23,23 +20,14 @@
   "author": "Arnout Kazemier",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/destinythegame/nock-knock/issues"
+    "url": "https://github.com/3rd-Eden/nock-knock/issues"
   },
-  "homepage": "https://github.com/destinythegame/nock-knock#readme",
+  "homepage": "https://github.com/3rd-Eden/nock-knock#readme",
   "dependencies": {
     "routable": "0.0.x"
   },
   "devDependencies": {
-    "babel-preset-es2015": "6.x.x",
-    "assume": "1.x.x",
-    "babel-register": "6.x.x",
-    "babel-cli": "6.x.x",
-    "mocha": "4.x.x"
-  },
-  "babel-ignore": false,
-  "babel": {
-    "presets": [
-      "babel-preset-es2015"
-    ]
+    "assume": "2.x.x",
+    "mocha": "5.x.x"
   }
 }

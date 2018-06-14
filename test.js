@@ -1,6 +1,6 @@
-import { describe, it } from 'mocha';
-import assume from 'assume';
-import knock from './index';
+const { describe, it } = require('mocha');
+const assume = require('assume');
+const knock = require('./')
 
 describe('knock', function () {
   it('is exported as function', function () {

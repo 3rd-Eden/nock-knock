@@ -1,4 +1,4 @@
-import Route from 'routable';
+const Route = require('routable');
 
 /**
  * Parameter based route validation for Nock.
